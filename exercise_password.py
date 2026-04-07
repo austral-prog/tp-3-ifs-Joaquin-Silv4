@@ -24,3 +24,24 @@ def password():
         Debe contener un numero
     """
     pass
+
+    contrasena=input("Ingrese contraseña:")
+
+    tiene_largo_ok = len(contrasena) >= 8       #booleanos
+    tiene_numero = False                        #booleanos
+
+    for caracter in contrasena:
+        if caracter in "0123456789":
+            tiene_numero=True
+
+    if tiene_largo_ok and tiene_numero:
+        print("Contraseña valida")
+
+    if not tiene_largo_ok:
+        print("Contraseña muy corta")
+
+    if not tiene_numero:
+        print("Debe contener un numero")
+
+
+password()
