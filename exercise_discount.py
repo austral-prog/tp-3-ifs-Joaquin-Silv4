@@ -1,3 +1,6 @@
+from time import process_time_ns
+
+
 def discount():
     """
     Ejercicio 9 (Integrador) - Sistema de Descuentos
@@ -25,3 +28,30 @@ def discount():
         Total final: 960.0
     """
     pass
+
+    precio_unitario=float(input("Ingrese precio:"))
+    cantidad=int(input("Ingrese cantidad:"))
+
+    subtotal=(precio_unitario*cantidad)
+    print(subtotal)
+
+    if 5 <= cantidad <= 9:
+        porcentaje=10
+
+    elif cantidad >= 10:
+        porcentaje=20
+
+    else:
+        porcentaje=0
+
+    monto_descuento = subtotal * (porcentaje / 100)
+    total_final = subtotal - monto_descuento
+
+    print(f"Subtotal: {subtotal}")
+    print(f"Descuento aplicado: {porcentaje}%")
+    print(f"Monto de descuento: {monto_descuento}")
+    print(f"Total final: {total_final}")
+
+
+
+discount()
