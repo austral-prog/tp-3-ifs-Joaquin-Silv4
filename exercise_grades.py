@@ -20,7 +20,7 @@ def grades():
     """
     pass
 
-    nota=int(input("Ingrese nota del 1 al 10:"))
+    nota=int(input())
 
     if 9 <= nota <= 10:
         print("Excelente")
