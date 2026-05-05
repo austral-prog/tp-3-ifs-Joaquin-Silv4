@@ -19,7 +19,7 @@ def leap_year():
     """
     pass
 
-    ano=int(input("Ingrese año:"))
+    ano=int(input())
 
     if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
         print(f"El año {ano} es bisiesto")
