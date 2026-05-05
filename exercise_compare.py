@@ -1,53 +1,32 @@
-from time import process_time_ns
-
-
-def discount():
+def compare():
     """
-    Ejercicio 9 (Integrador) - Sistema de Descuentos
+    Ejercicio 4 - Comparar Dos Números
 
-    Crear un sistema de descuentos para una tienda. Leer mediante input():
-    1. El precio unitario de un producto (decimal)
-    2. La cantidad de unidades a comprar (entero)
-
-    Calcular el total aplicando los siguientes descuentos según la cantidad:
-    - Si compra 10 o más unidades: 20% de descuento
-    - Si compra entre 5 y 9 unidades: 10% de descuento
-    - Si compra menos de 5 unidades: sin descuento
-
-    Imprimir:
-    1. El subtotal (precio × cantidad)
-    2. El porcentaje de descuento aplicado
-    3. El monto del descuento
-    4. El total final
+    Leer dos números enteros mediante input(). Compararlos e imprimir si el primero
+    es mayor, menor o igual al segundo.
 
     Ejemplo:
-        Para las entradas "100" y "12", la salida esperada es:
-        Subtotal: 1200.0
-        Descuento aplicado: 20%
-        Monto de descuento: 240.0
-        Total final: 960.0
+        Para las entradas "10" y "5", la salida esperada es:
+        10 es mayor que 5
+
+        Para las entradas "3" y "8", la salida esperada es:
+        3 es menor que 8
+
+        Para las entradas "7" y "7", la salida esperada es:
+        7 es igual a 7
     """
     pass
+    numero_1=int(input())
+    numero_2=int(input())
 
-    precio_unitario=float(input())
-    cantidad=int(input())
+    if numero_1 == numero_2:
+        print(f"{numero_1} es igual a {numero_2}")
 
-    subtotal=precio_unitario*cantidad
+    elif numero_1 > numero_2:
+        print(f"{numero_1} es mayor que {numero_2}")
 
-    if cantidad >= 10:
-        porcentaje = 20
-    elif 5 <= cantidad <= 9:
-        porcentaje = 10
     else:
-        porcentaje = 0
-
-    monto_descuento = subtotal * (porcentaje / 100)
-    total_final = subtotal - monto_descuento
-
-    print(f"Subtotal: {subtotal}")
-    print(f"Descuento aplicado: {porcentaje}%")
-    print(f"Monto de descuento: {monto_descuento}")
-    print(f"Total final: {total_final}")
+        print(f"{numero_1} es menor que {numero_2}")
 
 
-discount()
+compare()
