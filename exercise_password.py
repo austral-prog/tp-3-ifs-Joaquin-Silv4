@@ -25,7 +25,7 @@ def password():
     """
     pass
 
-    contrasena=input("Ingrese contraseña:")
+    contrasena=input()
 
     tiene_largo_ok = len(contrasena) >= 8       #booleanos
     tiene_numero = False                        #booleanos
