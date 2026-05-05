@@ -16,8 +16,8 @@ def compare():
         7 es igual a 7
     """
     pass
-    numero_1=int(input("Ingrese numero:"))
-    numero_2=int(input("Ingrese numero:"))
+    numero_1=int(input())
+    numero_2=int(input())
 
     if numero_1 == numero_2:
         print(f"{numero_1} es igual a {numero_2}")
