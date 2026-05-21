@@ -17,7 +17,7 @@ def weekday():
         Para la entrada "domingo", la salida esperada es:
         Fin de semana
     """
-    pass
+   
 
     dia=input().lower()
 
@@ -28,4 +28,4 @@ def weekday():
         print("Fin de semana")
 
 
-weekday()
+
