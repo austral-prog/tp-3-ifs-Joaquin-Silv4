@@ -23,7 +23,7 @@ def password():
         Contraseña muy corta
         Debe contener un numero
     """
-    pass
+    
 
     contrasena=input()
 
@@ -44,4 +44,4 @@ def password():
         print("Debe contener un numero")
 
 
-password()
+
