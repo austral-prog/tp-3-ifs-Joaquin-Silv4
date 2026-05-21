@@ -50,4 +50,4 @@ def discount():
     print(f"Total final: {total_final}")
 
 
-discount()
+
