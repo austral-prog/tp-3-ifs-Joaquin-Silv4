@@ -18,7 +18,7 @@ def grades():
         Para la entrada "3", la salida esperada es:
         Insuficiente
     """
-    pass
+    
 
     nota=int(input())
 
@@ -39,4 +39,4 @@ def grades():
 
 
 
-grades()
+
