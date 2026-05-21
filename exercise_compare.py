@@ -15,7 +15,7 @@ def compare():
         Para las entradas "7" y "7", la salida esperada es:
         7 es igual a 7
     """
-    pass
+    
     numero_1=int(input())
     numero_2=int(input())
 
@@ -28,5 +28,3 @@ def compare():
     else:
         print(f"{numero_1} es menor que {numero_2}")
 
-
-compare()
